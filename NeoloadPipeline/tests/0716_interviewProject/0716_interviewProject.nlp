@@ -1,0 +1,19 @@
+# Project description file
+
+project.name=0716_interviewProject
+project.version=8.10
+project.original.version=8.10
+product.name=NeoLoad
+product.original.name=NeoLoad
+ssh.trustUnknownHosts.MONITORS=false
+monitor.tls.insecure=false
+product.version=2024.2.0
+product.original.version=2024.2.0
+project.is-open-test-settings-after-upload=true
+project.id=5ef183b9-6469-4c73-a420-494cceae90f2
+project.config.path=config.zip
+project.config.storage=ZIP
+team.server.enabled=false
+project.workspace=5e3acde2e860a132744ca916
+project.test-settings=605e9d49-1e57-40fd-a3ad-2906f13650da
+project.test-settings-name=myTest

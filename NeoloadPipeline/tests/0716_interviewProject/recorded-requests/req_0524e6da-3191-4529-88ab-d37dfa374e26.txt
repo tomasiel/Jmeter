@@ -1,0 +1,19 @@
+GET https://opensource-demo.orangehrmlive.com/web/dist/css/chunk-vendors.css?v=1711595107870 HTTP/2.0
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+sec-purpose: prefetch;prerender
+sec-ch-ua-mobile: ?0
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+accept: text/css,*/*;q=0.1
+purpose: prefetch
+sec-fetch-site: same-origin
+sec-fetch-mode: no-cors
+sec-fetch-dest: style
+referer: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+accept-encoding: gzip, deflate, br, zstd
+accept-language: en-US,en;q=0.9
+cookie: orangehrm=442d1d83f62adedc39a934b16ff9db37
+if-none-match: "3d071-614c58d39516a"
+if-modified-since: Fri, 29 Mar 2024 05:02:50 GMT
+priority: u=0
+
