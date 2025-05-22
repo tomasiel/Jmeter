@@ -1,0 +1,105 @@
+name: JennkinsPipeline
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /JennkinsPipeline/src
+        type: javaClasspath
+  - name: Datasets
+    resources: 
+  - name: Results
+    resources: 
+      - name: PipeLineSched_1747935107919.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1747935107919
+          tags: 
+          testId: A1F03732973571C0C785B26630383332
+          testName: PipeLineSched
+        dependencies: 
+          - path: /JennkinsPipeline/Results/PipeLineSched_1747935107919_orch!system.mstats
+            type: statsSessionStore
+          - path: /JennkinsPipeline/Results/PipeLineSched_1747935107919_orch!system.rstats
+            type: statsSessionStore
+          - path: /JennkinsPipeline/Results/PipeLineSched_1747935107919_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /JennkinsPipeline/Results/PipeLineSched_1747935107919_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /JennkinsPipeline/Results/PipeLineSched_1747935124531.executiondlr
+            type: statsSessionAsset
+          - path: /JennkinsPipeline/Schedules/PipeLineSched.testsuite
+            type: statsSessionTest
+      - name: PipeLineSched_1747935107919_orch!system.mstats
+      - name: PipeLineSched_1747935107919_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: PipeLineSched_1747935107919_perf!localhost.mstats
+      - name: PipeLineSched_1747935107919_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: PipeLineSched_1747935124531.executiondlr
+  - name: Schedules
+    resources: 
+      - name: PipeLineSched.testsuite
+        type: com.ibm.rational.test.lt.schedule
+        version: 11.0.4.0
+        properties: 
+          description: 'Stages:
+
+	users=1; duration=Run Until Finished
+
+User Group 1: Group Size 100.0 percent
+
+	Test(s): PipelineTest
+
+'
+          name: PipeLineSched
+          type: com.ibm.rational.test.common.schedule.Schedule
+          uid: A1F03732973571C0C785B26630383332
+        dependencies: 
+          - path: /JennkinsPipeline/Tests/PipelineTest.testsuite
+            type: scheduleInvokedTest
+      - name: PipeLineSched_1747935660604.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1747935660604
+          tags: 
+          testId: A1F03732973571C0C785B26630383332
+          testName: PipeLineSched
+        dependencies: 
+          - path: /JennkinsPipeline/Schedules/PipeLineSched.testsuite
+            type: statsSessionTest
+          - path: /JennkinsPipeline/Schedules/PipeLineSched_1747935660604_orch!system.mstats
+            type: statsSessionStore
+          - path: /JennkinsPipeline/Schedules/PipeLineSched_1747935660604_orch!system.rstats
+            type: statsSessionStore
+          - path: /JennkinsPipeline/Schedules/PipeLineSched_1747935660604_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /JennkinsPipeline/Schedules/PipeLineSched_1747935660604_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /JennkinsPipeline/Schedules/PipeLineSched_1747935696307.executiondlr
+            type: statsSessionAsset
+      - name: PipeLineSched_1747935660604_orch!system.mstats
+      - name: PipeLineSched_1747935660604_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: PipeLineSched_1747935660604_perf!localhost.mstats
+      - name: PipeLineSched_1747935660604_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: PipeLineSched_1747935696307.executiondlr
+  - name: Tests
+    resources: 
+      - name: PipelineTest.testsuite
+        type: com.ibm.rational.test.lt.test
+        version: 11.0.4.0
+        properties: 
+          features: com.ibm.rational.test.lt.feature.lt
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1F037328D3BBBC0C785B26630383332
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: PipeLineSched_Schedule_A1F03732973571C0C785B26630383332.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: PipelineTest_Test_A1F037328D3BBBC0C785B26630383332.java
+            type: com.ibm.rational.test.lt.generatedCode
